@@ -1,0 +1,160 @@
+.table {
+  display: flex;
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Arimo", sans-serif;
+}
+
+.grid__title_1 {
+  font-size: 24px;
+}
+.grid__title_2 {
+  font-size: 20px;
+}
+.grid__el {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.grid__img {
+  width: 100%;
+  max-width: 212px;
+}
+.grid__row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr repeat(4, 1fr) 0.3fr;
+  column-gap: 42px;
+  border-bottom: 1px solid #bfbbbb;
+
+}
+.grid__row:first-child {
+  padding-bottom: 20px;
+}
+
+.grid__row:not(:first-child) {
+  padding: 36px 0;
+}
+.grid__buttons {
+  height: 36px;
+}
+.button__plus {
+  height: 100%;
+  padding: 0 7px;
+  border: 0;
+  background-color: #f5f5f5;
+  transition: all ease 0.3s;
+  &:hover {
+    background-color: #ebebeb;
+  }
+}
+.button__minus {
+  height: 100%;
+  padding: 0 9px;
+  border: 0;
+  background-color: #f5f5f5;
+  transition: all ease 0.3s;
+  &:hover {
+    background-color: #ebebeb;
+  }
+}
+.grid__amount {
+  height: 100%;
+  padding: 0 20px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.result_container {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+}
+.result {
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin: 36px 0 72px 0;
+}
+.total {
+  font-weight: bold;
+}
+.checkout__button {
+  border: 0;
+  padding: 16px 14px;
+  font-size: 16px;
+  font-family: "Arimo", sans-serif;
+  background: #e7d5c7;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  &:hover {
+    background: #d3c1b3;
+  }
+  &:active {
+    transition: all ease 20ms;
+    background: #a18c7c;
+  }
+}
+.checkout {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.basket {
+  margin-bottom: 116px;
+}
+.button__remove{
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+  padding: 0;
+  border: 0px solid black;
+  background: url("../../img/Vector\ \(7\).svg") 100% 100% no-repeat;
+  transition: all ease 0.3s;
+}
+.button__remove__container{
+    transform: translateY(-2px);
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.remove{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+    
+}
+
+.null__text{
+    font-family: "Arimo",sans-serif;
+    font-size: 72px;
+    color: #d8d8d8;
+    display: flex;
+    justify-content: center;
+    
+}
+.null{
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 148px;
+}
+.null__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

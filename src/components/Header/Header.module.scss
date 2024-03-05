@@ -1,0 +1,129 @@
+.header {
+  display: grid;
+  grid-template-rows: 40px 100px;
+  position: relative;
+}
+.top__header {
+  background-color: #3d3d3d;
+  width: 100%;
+  font-size: 12px;
+  font-family: "Arimo", sans-serif;
+  color: #b5b5b5;
+}
+.bottom__header {
+  background-color: #f1f1f1;
+  width: 100%;
+  color: #eeeeee;
+  font-size: 16px;
+  font-family: "Arimo", sans-serif;
+  line-height: 16.18px;
+}
+.container {
+  position: relative;
+  max-width: 1240px;
+  margin: 0 auto;
+  height: 100%;
+}
+.top__flex {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 40px;
+}
+.logo {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  top: -10px;
+}
+.input {
+  padding: 12px;
+  border: 1px solid #bfbbbb;
+  width: 392px;
+  height: 45px;
+  position: relative;
+  background: url(./../../img/material-symbols_search.svg) no-repeat center
+    right 12px;
+  background-color: white;
+  margin-right: 42px;
+  box-sizing: border-box;
+  &::placeholder {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+  }
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: red;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+.bottom__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+  position: relative;
+  top: 3px;
+  margin-right: 56px;
+}
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+  padding: 2px;
+  color: #000000;
+  font-family: "Arino", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-right: 24px;
+}
+.icon__user {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  background: url(./../../img/user_icon.svg) 100% 100% no-repeat;
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.icon__basket {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  background: url(./../../img/basket_icon.svg) 100% 100% no-repeat;
+  transition: all ease 0.3s;
+  &:active {
+    transform: scale(0.95);
+    transition: none;
+  }
+}

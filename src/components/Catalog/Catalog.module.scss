@@ -1,0 +1,65 @@
+@mixin width(){
+  max-width: 286px;
+}
+@mixin trans($time:3){
+  transition: all ease #{$time/10}s;
+}
+
+.catalogItem{
+  width: 286px;
+  font-size: 16px;
+  font-family: 'Arimo','sans-serif';
+  font-weight: 400;
+  
+}
+.catalog__inner{
+  cursor: pointer;
+  height: 100%;
+  box-sizing:border-box;
+  padding: 12px 12px 0 12px;
+  position: relative;
+  font-size: 16px;
+  @include trans();
+  &::before{
+    content: '';
+    position: absolute;
+    top: 17px;
+    right: 13px;
+    background: url(./../../img/Arrow.svg) 100% 100% no-repeat;
+    width: 12px;
+    height: 12px;
+    @include trans();
+  }
+  &:hover{
+    background-color: #ede0d5;
+    &::before{
+      right: 8px;
+    }
+  }
+  &:active{
+    @include trans(1);
+    background-color: #E7D5C7;
+    
+  }
+}
+.catalog{
+  border:1px solid #BFBBBB;
+  max-height: 476px; 
+  @include width();
+  
+}
+
+.title{
+  padding-bottom: 12px;
+  border-bottom:1px solid #DDDDDD ;
+}
+.last{
+  border-bottom:0px solid #DDDDDD ;
+}
+.catalogMain{
+  font-size: 20px;
+  font-family: 'Arimo','sans-serif';
+  font-weight: 400;
+  background-color: #E7D5C7;
+  padding: 12px 12px 8px 12px;
+}

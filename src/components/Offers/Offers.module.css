@@ -1,0 +1,61 @@
+.flex {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  
+}
+.title {
+  font-family: "Arimo", sans-serif;
+  font-size: 36px;
+  
+  margin-bottom: 78px;
+
+}
+.wrapper {
+  
+  max-width: 1240px;
+  margin: 0 auto;
+  margin-bottom: 126px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  
+  
+}
+.prev{
+  
+}
+.next{
+  
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.prev{
+  cursor: pointer;
+  background: url(../../img/ArrowPrev.svg) 100% 100% no-repeat;
+  width: 54px;
+  height: 52px;
+  transition: all ease 0.1s;
+  clip-path: circle(50%);
+}
+
+.prev:active{
+  transform: scale(0.95);
+  
+}
+.next{
+  cursor: pointer;
+  background: url(../../img/ArrowNext.svg) 100% 100% no-repeat;
+  width: 54px;
+  height: 52px;
+  transition: all ease 0.1s;
+  clip-path: circle(50%);
+}
+.next:active{
+  transform: scale(0.95);
+  
+}
